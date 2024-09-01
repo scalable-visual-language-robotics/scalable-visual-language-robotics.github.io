@@ -9,18 +9,18 @@
   <meta property="og:description" content="Scalable, Training-Free Visual Language Robotics: a modular multi-model framework for consumer-grade GPUs"/>
   <meta property="og:url" content="https://scalable-visual-language-robotics.github.io/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image" content="static/image/svlr.png" />
+  <meta property="og:image:width" content="1162"/>
+  <meta property="og:image:height" content="1382"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="SVLR">
+  <meta name="twitter:description" content="Scalable, Training-Free Visual Language Robotics: a modular multi-model framework for consumer-grade GPUs">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="static/images/svlr.png">
+  <meta name="twitter:card" content="SVLR">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="SVLR">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -82,17 +82,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/bastien-muraccioli/svlr" target="_blank"
@@ -129,11 +118,12 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/intro.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+          Scalable Visual Language Robotics (SVLR):<br>
+          a modular framework for controlling robots using visual and language inputs, based on multi-model approach.
       </h2>
     </div>
   </div>
@@ -148,10 +138,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The integration of language instructions with robotic control, specifically through Vision Language Action (VLA) models, has shown remarkable potential. However, existing systems are often hampered by high computational demands and the necessity for extensive retraining, limiting their accessibility and scalability. 
-
-            In this paper, we introduce a scalable, training-free, open-source modular approach named SVLR: Scalable Visual Language Robotics, that operates on consumer-grade GPUs. Our approach integrates a combination of open-source AI models, including the Vision-Language Model Mini-InternVL, zero-shot image segmentation model CLIPSeg, Large Language Model Phi-3, and sentence similarity model all-MiniLM. These models are employed to identify objects in unknown environments, use these objects as parameters for task execution, and generate a sequence of actions in response to language instructions, based on the robot capabilities and a set of pre-programmed robotic tasks. 
-            
+            The integration of language instructions with robotic control, specifically through Vision Language Action (VLA) models, has shown remarkable potential. However, existing systems are often hampered by high computational demands and the necessity for extensive retraining, limiting their accessibility and scalability.<br>
+            In this paper, we introduce a scalable, training-free, open-source modular approach named SVLR: Scalable Visual Language Robotics, that operates on consumer-grade GPUs. Our approach integrates a combination of open-source AI models, including the Vision-Language Model Mini-InternVL, zero-shot image segmentation model CLIPSeg, Large Language Model Phi-3, and sentence similarity model all-MiniLM. These models are employed to identify objects in unknown environments, use these objects as parameters for task execution, and generate a sequence of actions in response to language instructions, based on the robot capabilities and a set of pre-programmed robotic tasks.<br>            
             The scalability of the SVLR framework is demonstrated by its ability to integrate new robotic tasks and robots through the simple addition of text descriptions and programmed tasks to the existing set, as well as by seamlessly incorporating new AI models. This ensures continued compatibility with rapid AI technological advancements and sustained compatibility with a wide range of robots and tasks. 
             
             The framework was evaluated using a UR10 robotic arm, successfully executing various pick-and-place tasks. Notably, even when deployed on an NVIDIA RTX 2070 (mobile) GPU, our system demonstrated behavior comparable to VLA models, without the need for training.
@@ -171,30 +159,30 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/svlr.png" alt="SVLR Archi"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          SVLR Architecture.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/seg_example.png" alt="Image Detection"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Object detection with VLM and Zero-Shot Segmentation.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/perceptionModule.png" alt="Perception Archi"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Object detection proceddings.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/actionManager.png" alt="Action Manager"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Action Manager: From LLM output to robot action.
       </h2>
     </div>
   </div>
@@ -204,56 +192,66 @@
 <!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Experiments: SVLR on UR10 robot</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+          <div class="item item-video1">
+              <video poster="" id="video1" autoplay controls muted loop height="100%">
+                  <!-- Your video file here -->
+                  <source src="static/videos/xp1.mp4"
+                          type="video/mp4">
+              </video>
+          </div>
+          <div class="item item-video2">
+              <video poster="" id="video2" autoplay controls muted loop height="100%">
+                  <!-- Your video file here -->
+                  <source src="static/videos/xp2.mp4"
+                          type="video/mp4">
+              </video>
+          </div>
+          <div class="item item-video3">
+              <video poster="" id="video3" autoplay controls muted loop height="100%">
+                  \
+                  <!-- Your video file here -->
+                  <source src="static/videos/xp3.mp4"
+                          type="video/mp4">
+              </video>
+          </div>
+          <div class="item item-video4">
+              <video poster="" id="video4" autoplay controls muted loop height="100%">
+                  \
+                  <!-- Your video file here -->
+                  <source src="static/videos/xp4.mp4"
+                          type="video/mp4">
+              </video>
+          </div>
+          <div class="item item-video5">
+              <video poster="" id="video5" autoplay controls muted loop height="100%">
+                  \
+                  <!-- Your video file here -->
+                  <source src="static/videos/xp6.mp4"
+                          type="video/mp4">
+              </video>
+          </div>
+          <div class="item item-video7">
+              <video poster="" id="video7" autoplay controls muted loop height="100%">
+                  \
+                  <!-- Your video file here -->
+                  <source src="static/videos/xp7.mp4"
+                          type="video/mp4">
+              </video>
+          </div>
+          <div class="item item-video8">
+              <video poster="" id="video8" autoplay controls muted loop height="100%">
+                  \
+                  <!-- Your video file here -->
+                  <source src="static/videos/xp8.mp4"
+                          type="video/mp4">
+              </video>
+          </div>
       </div>
     </div>
   </div>
@@ -266,7 +264,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!--<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -276,7 +274,7 @@
         
       </div>
     </div>
-  </section>
+  </section>-->
 <!--End paper poster -->
 
 
@@ -284,7 +282,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>Comming Soon</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
